@@ -1,0 +1,60 @@
+/* General styles for the body and layout */
+body {
+  top:120px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Wrapper to contain the 2x2 layout */
+.container {
+  position: relative;
+  top:410px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  grid-template-rows: repeat(2, 1fr);    /* Creates 2 equal rows */
+  gap: 20px;                            /* Space between items */
+  width: 120%;                           /* 80% width of the screen */
+  height: 80%;                          /* 80% height of the screen */
+}
+
+/* Styling for each component container */
+.component {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h1 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Inputs and buttons for form fields */
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
